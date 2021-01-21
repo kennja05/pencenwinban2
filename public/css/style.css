@@ -1,3 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
 .header {
-  color: #4bc;
-  font-size: 20px; }
+  height: 100vh;
+  font-size: 20px;
+  background-image: linear-gradient(to right bottom, rgba(225, 154, 134, 0.7), rgba(119, 119, 119, 0.7)), url("../images/pcwb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .header__text-box {
+    color: #fbedda;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

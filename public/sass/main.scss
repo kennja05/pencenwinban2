@@ -1,6 +1,46 @@
-$color-blue: #4bc;
+$color-gray: #777;
+$color-white: #fbfbfb;
+$color-offwhite: #fbedda;
+$color-peach: #f27b55;
+$color-darkpeach: #e19a86;
+$color-blue: #555bf2;
+$color-green: #58f255;
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} 
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+ 
 .header {
-    color: $color-blue;
+    height: 100vh;
     font-size: 20px;
+    background-image: 
+        linear-gradient(to right bottom,
+        rgba($color-darkpeach, 0.7), 
+        rgba($color-gray, 0.7)),
+        url('../images/pcwb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    
+    &__text-box {
+        color: $color-offwhite;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 } 
