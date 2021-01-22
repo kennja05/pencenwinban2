@@ -6,7 +6,12 @@ $color-darkpeach: #e19a86;
 $color-blue: #555bf2;
 $color-green: #58f255;
 
-@keyframes fadeOut {
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Bold.ttf)
+}
+
+ @keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -23,6 +28,39 @@ $color-green: #58f255;
         opacity: 1;
     }
 } 
+
+@keyframes lineDrawToRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes dumbSlide {
+    from {
+        width: 0%;
+        transform: rotateX(180deg);
+    }
+
+    to {
+        width: 100%;
+        transform: rotateX(180deg);
+
+    }
+}
+
+@keyframes lineDrawToLeft {
+    0% {
+      left: 100%;
+      width:0;
+    }
+    100% {
+      left: 0;
+      width:100%;
+    }
+  }
 
 *,
 *::after,
@@ -43,7 +81,7 @@ body {
  
 .header {
     height: 100vh;
-    font-size: 20px;
+    font-size: 2.1rem;
     background-image: 
         linear-gradient(to right bottom,
         rgba($color-darkpeach, 0.7), 
@@ -51,8 +89,13 @@ body {
         url('../images/pcwb.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative; 
-     
+    font-family: Inter;
+    
     &__box {
         color: $color-offwhite;
         color:  black;
@@ -63,12 +106,29 @@ body {
         transform: translate(-50%, -50%);
         text-align: center;
         line-height: 2;
+        white-space: nowrap;
     }
 
-    &__line {
-        background-image: linear-gradient(to left, $color-white, $color-offwhite);
-        height: .5rem;
-        border: none;
+    &__title-main:before {
+        content: '';
+        width: 100%;
+        border-bottom: solid .5rem #fff;
+        position: absolute;
+        left: 0;
+        top: 5%;
+        z-index: 1;
+        animation: lineDrawToRight .8s ease-out;
     }
 
+    &__title-main:after {
+        content: '';
+        width: 100%;
+        border-bottom: solid .5rem #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        animation: lineDrawToLeft .8s ease-out;
+        z-index: 1;
+    }
+ 
 }  
