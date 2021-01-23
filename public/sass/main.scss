@@ -1,4 +1,5 @@
 $color-gray: #777;
+$color-black: #040404;
 $color-white: #fbfbfb;
 $color-offwhite: #fbedda;
 $color-peach: #f27b55;
@@ -78,15 +79,15 @@ body {
     box-sizing: border-box;
     line-height: 1.7;
 }
- 
+
 .header {
     height: 100vh;
     font-size: 2.1rem;
     background-image: 
         linear-gradient(to right bottom,
-        rgba($color-darkpeach, 0.7), 
-        rgba($color-gray, 0.7)),
-        url('../images/pcwb.jpg');
+        rgba(0,0,0, 0.5), 
+        rgba(0,0,0, 0.5)),
+        url('../images/trumpet.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -95,13 +96,23 @@ body {
     background-size: cover;
     position: relative; 
     font-family: Inter;
-    
+ 
+    &:before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #262c40;
+        animation: fadeOut 3s forwards 3s;
+    }
+
     &__box {
-        color: $color-offwhite;
-        color:  black;
+        color: $color-white;
         text-transform: uppercase;
         position: absolute;
-        top: 50%;
+        top: 53%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -109,25 +120,34 @@ body {
         white-space: nowrap;
     }
 
+    &__title-main {
+        color: $color-offwhite;
+        animation: fadeIn 1.5s;
+    }
+
+    &__title-sub {
+        animation: fadeIn 3s 3s backwards;
+    }
+
     &__title-main:before {
         content: '';
         width: 100%;
-        border-bottom: solid .5rem #fff;
+        border-bottom: solid .5rem $color-offwhite;
         position: absolute;
         left: 0;
         top: 5%;
         z-index: 1;
-        animation: lineDrawToRight .8s ease-out;
+        animation: lineDrawToRight .8s ease-out 1s backwards;
     }
 
     &__title-main:after {
         content: '';
         width: 100%;
-        border-bottom: solid .5rem #fff;
+        border-bottom: solid .5rem $color-offwhite;
         position: absolute;
         left: 0;
         top: 50%;
-        animation: lineDrawToLeft .8s ease-out;
+        animation: lineDrawToLeft .8s ease-out 1s backwards;
         z-index: 1;
     }
  
