@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Inter;
-  src: url(../fonts/Inter-Bold.ttf); }
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Medium.ttf); }
 
 @keyframes fadeOut {
   from {
@@ -19,14 +19,6 @@
     width: 0; }
   100% {
     width: 100%; } }
-
-@keyframes dumbSlide {
-  from {
-    width: 0%;
-    transform: rotateX(180deg); }
-  to {
-    width: 100%;
-    transform: rotateX(180deg); } }
 
 @keyframes lineDrawToLeft {
   0% {
@@ -48,12 +40,13 @@ html {
 
 body {
   box-sizing: border-box;
-  line-height: 1.7; }
+  line-height: 1.7;
+  color: #fbedda; }
 
 .header {
   height: 100vh;
   font-size: 2.1rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trumpet.jpg");
+  background-image: linear-gradient(to right bottom, rgba(4, 4, 4, 0.5), rgba(4, 4, 4, 0.5)), url("../images/trumpet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -61,7 +54,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: Inter; }
+  font-family: Rubik; }
   .header:before {
     content: '';
     position: absolute;
@@ -70,9 +63,8 @@ body {
     bottom: 0;
     right: 0;
     background-color: #262c40;
-    animation: fadeOut 3s forwards 3s; }
+    animation: fadeOut 6s forwards 5s; }
   .header__box {
-    color: #fbfbfb;
     text-transform: uppercase;
     position: absolute;
     top: 53%;
@@ -82,25 +74,20 @@ body {
     line-height: 2;
     white-space: nowrap; }
   .header__title-main {
-    color: #fbedda;
     animation: fadeIn 1.5s; }
+    .header__title-main:before, .header__title-main:after {
+      content: '';
+      width: 100%;
+      border-bottom: solid 0.5rem #fbedda;
+      position: absolute;
+      z-index: 1; }
+    .header__title-main:before {
+      left: 0;
+      top: 5%;
+      animation: lineDrawToRight .8s ease-out 1s backwards; }
+    .header__title-main:after {
+      left: 0;
+      top: 50%;
+      animation: lineDrawToLeft .8s ease-out 1s backwards; }
   .header__title-sub {
-    animation: fadeIn 3s 3s backwards; }
-  .header__title-main:before {
-    content: '';
-    width: 100%;
-    border-bottom: solid 0.5rem #fbedda;
-    position: absolute;
-    left: 0;
-    top: 5%;
-    z-index: 1;
-    animation: lineDrawToRight .8s ease-out 1s backwards; }
-  .header__title-main:after {
-    content: '';
-    width: 100%;
-    border-bottom: solid 0.5rem #fbedda;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    animation: lineDrawToLeft .8s ease-out 1s backwards;
-    z-index: 1; }
+    animation: fadeIn 5s 3s backwards; }
