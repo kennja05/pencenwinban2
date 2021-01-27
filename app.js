@@ -5,10 +5,15 @@ const app = express()
 // use the express-static middleware
 app.use(express.static("public"))
 
+//use ejs for views
+app.set('view engine', 'ejs');
+
 // define the first route
-app.get("/", function (req, res) {
-  res.send("<h1>Hello World!</h1>")
-})
+// index page
+//res.render will look into views folder
+app.get('/', function(req, res) {
+  res.render('pages/index');
+});
 
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
