@@ -45,7 +45,7 @@ $color-darkblue: #262c40;
       left: 0;
       width:100%;
     }
-  }
+}
 
 *,
 *::after,
@@ -56,13 +56,19 @@ $color-darkblue: #262c40;
 } 
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%;        
+    scroll-behavior: smooth;
 }
 
 body {
     box-sizing: border-box;
     line-height: 1.7;
     color: $color-offwhite;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header {
@@ -81,7 +87,6 @@ body {
     background-size: cover;
     position: relative; 
     font-family: Rubik;
-
  
     &:before {
         content: ''; 
@@ -133,6 +138,20 @@ body {
 
     &__title-sub {
         animation: fadeIn 5s 3s backwards;
+    }
+
+    &__scroller{
+        line-height: 0.3;
+        position: relative; 
+        top: 87%;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center; 
+        
+        & span {
+            display: block;
+
+        }
     }
  
 }  
