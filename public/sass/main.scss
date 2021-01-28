@@ -47,6 +47,18 @@ $color-darkblue: #262c40;
     }
 }
 
+@keyframes pulse {
+    0%{
+        transform: scale(1, 1) translateX(-50%);
+    }
+    50%{
+        transform: scale(1.1, 1.1) translateX(-50%);
+    }
+    100%{
+        transform: scale(1, 1) translateX(-50%);
+    }
+}
+
 *,
 *::after,
 *::before {
@@ -97,7 +109,7 @@ a, a:hover, a:focus, a:active {
         right: 0;
         background-color: $color-darkblue;
         animation: fadeOut 6s forwards 5s;
-    } 
+    }
 
     &__box {
         text-transform: uppercase;
@@ -141,17 +153,25 @@ a, a:hover, a:focus, a:active {
     }
 
     &__scroller{
-        line-height: 0.3;
-        position: relative; 
-        top: 87%;
+        line-height: 0.8;
+        font-size: 1.5rem;
+        position: absolute; 
+        top: 85%;
         left: 50%;
         transform: translate(-50%);
-        text-align: center; 
-        
+        text-transform: lowercase;
+        animation: fadeIn .3s backwards 4s;
+        border: solid;
         & span {
             display: block;
+        }
 
+        &-link{
+            animation: pulse .3s 2 5s;
+        }
+
+        &:hover{
+            color: darken($color-white, 40%);
         }
     }
- 
 }  
