@@ -1,3 +1,13 @@
+.footer {
+  color: orange;
+  background-color: gray;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+  .footer__item {
+    padding: 1rem; }
+
 @font-face {
   font-family: Rubik;
   src: url(../fonts/Rubik-Medium.ttf); }
@@ -111,12 +121,10 @@ a, a:hover, a:focus, a:active {
     top: 85%;
     left: 50%;
     transform: translate(-50%);
-    text-transform: lowercase;
-    animation: fadeIn .3s backwards 4s;
-    border: solid; }
+    text-transform: lowercase; }
     .header__scroller span {
       display: block; }
     .header__scroller-link {
-      animation: pulse .3s 2 5s; }
+      animation: pulse .3s backwards 2 5s; }
     .header__scroller:hover {
-      color: #959595; }
+      color: #f1c07e; }
