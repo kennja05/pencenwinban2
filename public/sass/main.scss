@@ -75,7 +75,6 @@ html {
 }
 
 body {
-    box-sizing: border-box;
     line-height: 1.7;
     color: $color-offwhite;
 }
@@ -83,6 +82,10 @@ body {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+ul {
+    list-style: none;
 }
 
 .header {
@@ -116,7 +119,7 @@ a, a:hover, a:focus, a:active {
     &__box {
         text-transform: uppercase;
         position: absolute;
-        top: 53%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -126,6 +129,7 @@ a, a:hover, a:focus, a:active {
 
     &__title-main {
         animation: fadeIn 1.5s;
+        font-size: 4rem;
 
         &:before, 
         &:after {
@@ -138,7 +142,7 @@ a, a:hover, a:focus, a:active {
 
         &:before {
             left: 0;
-            top: 5%;
+            top: 0%;
             animation: lineDrawToRight .8s ease-out 1s backwards;
         }
 

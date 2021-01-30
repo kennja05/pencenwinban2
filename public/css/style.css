@@ -58,13 +58,15 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  box-sizing: border-box;
   line-height: 1.7;
   color: #fbedda; }
 
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit; }
+
+ul {
+  list-style: none; }
 
 .header {
   height: 100vh;
@@ -90,14 +92,15 @@ a, a:hover, a:focus, a:active {
   .header__box {
     text-transform: uppercase;
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 2;
     white-space: nowrap; }
   .header__title-main {
-    animation: fadeIn 1.5s; }
+    animation: fadeIn 1.5s;
+    font-size: 4rem; }
     .header__title-main:before, .header__title-main:after {
       content: '';
       width: 100%;
@@ -106,7 +109,7 @@ a, a:hover, a:focus, a:active {
       z-index: 1; }
     .header__title-main:before {
       left: 0;
-      top: 5%;
+      top: 0%;
       animation: lineDrawToRight .8s ease-out 1s backwards; }
     .header__title-main:after {
       left: 0;
