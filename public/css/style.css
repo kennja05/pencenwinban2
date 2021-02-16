@@ -12,6 +12,10 @@
   font-family: Rubik;
   src: url(../fonts/Rubik-Medium.ttf); }
 
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather.ttf); }
+
 @keyframes fadeOut {
   from {
     opacity: 1; }
@@ -115,14 +119,28 @@ ul {
     position: absolute;
     top: 85%;
     left: 50%;
-    z-index: 1;
     transform: translate(-50%);
     text-transform: lowercase;
-    animation: fadeIn 3s backwards 7s; }
+    animation: fadeIn 5s backwards 7s; }
     .header__scroller span {
       display: block; }
     .header__scroller:hover {
-      color: #c8c8c8; }
+      color: #e2e2e2;
+      transform: translate(-50%, 0.2rem); }
 
 .about {
-  background-color: black; }
+  font-size: 2.5rem;
+  background: linear-gradient(to top, #192333, #262c40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  font-family: Merriweather; }
+  .about__content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about__content-image {
+      width: 50%;
+      height: auto; }

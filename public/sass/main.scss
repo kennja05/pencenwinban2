@@ -8,7 +8,12 @@ $color-darkblue: #262c40;
 
 @font-face {
     font-family: Rubik;
-    src: url(../fonts/Rubik-Medium.ttf)
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather.ttf);
 }
 
  @keyframes fadeOut {
@@ -151,21 +156,37 @@ ul {
         position: absolute; 
         top: 85%;
         left: 50%;
-        z-index: 1;
         transform: translate(-50%);
         text-transform: lowercase;
-        animation: fadeIn 3s backwards 7s;
+        animation: fadeIn 5s backwards 7s;
 
         & span {
             display: block;
         }
 
         &:hover{
-            color: darken($color-white, 20%);
+            color: darken($color-white, 10%);
+            transform: translate(-50%, .2rem);
         }
     }
 }
 
 .about{
-    background-color: black;
+    font-size: 2.5rem;
+    background: linear-gradient(to top, #192333, $color-darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-family: Merriweather;
+    &__content {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-image{
+            width: 50%;
+            height: auto;
+        }
+    }
 }
