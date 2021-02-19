@@ -1,13 +1,11 @@
 .footer {
-    // min-height: 5rem;
-    color: orange;
+    color: #f37955;
     background-color: gray;
     font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: baseline;
     &__item {
-        // margin: 1rem;
         padding: 1rem;
     }
 }

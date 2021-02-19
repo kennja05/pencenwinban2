@@ -8,7 +8,6 @@ app.use(express.static("public"))
 //use ejs for views
 app.set('view engine', 'ejs');
 
-// define the first route
 // index page
 //res.render will look into views folder
 app.get('/', function(req, res) {
