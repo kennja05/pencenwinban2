@@ -1,6 +1,6 @@
 .footer {
   color: #f37955;
-  background-color: gray;
+  background: url("../images/dark-grey-terrazzo.png"), linear-gradient(rgba(35, 48, 89, 0.8), rgba(255, 255, 255, 0.8));
   font-size: 3rem;
   display: flex;
   justify-content: center;
