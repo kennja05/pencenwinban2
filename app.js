@@ -14,6 +14,11 @@ app.get('/', function(req, res) {
   res.render('pages/index');
 });
 
+//director page
+app.get('/director', function(req,res){
+  res.render('pages/director')
+})
+
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
