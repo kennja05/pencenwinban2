@@ -1,0 +1,11 @@
+.nav {
+    display: flex;
+    z-index: 1;
+    &__link {
+        color: green;
+    }
+}
+
+#nav__link {
+    color: green;
+}

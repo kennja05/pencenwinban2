@@ -8,13 +8,22 @@
   .footer__item {
     padding: 1rem; }
 
+.nav {
+  display: flex;
+  z-index: 1; }
+  .nav__link {
+    color: green; }
+
+#nav__link {
+  color: green; }
+
 @font-face {
   font-family: Rubik;
   src: url(../fonts/Rubik-Medium.ttf); }
 
 @font-face {
   font-family: Merriweather;
-  src: url(../fonts/Merriweather.ttf); }
+  src: url(../fonts/Merriweather-Regular.ttf); }
 
 @keyframes fadeOut {
   from {

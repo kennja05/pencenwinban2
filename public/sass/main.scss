@@ -1,4 +1,5 @@
-@import 'footer.scss'; 
+@import 'footer.scss';
+@import 'nav.scss'; 
 
 $color-gray: #777;
 $color-black: #040404;
@@ -13,7 +14,7 @@ $color-darkblue: #262c40;
 
 @font-face {
     font-family: Merriweather;
-    src: url(../fonts/Merriweather.ttf);
+    src: url(../fonts/Merriweather-Regular.ttf);
 }
 
  @keyframes fadeOut {
