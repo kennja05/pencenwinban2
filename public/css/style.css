@@ -9,13 +9,11 @@
     padding: 1rem; }
 
 .nav {
-  display: flex;
-  z-index: 1; }
+  display: flex; }
   .nav__link {
     color: green; }
-
-#nav__link {
-  color: green; }
+    .nav__link:hover {
+      color: black; }
 
 @font-face {
   font-family: Rubik;
