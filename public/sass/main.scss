@@ -6,6 +6,7 @@ $color-black: #040404;
 $color-white: #fbfbfb;
 $color-offwhite: #fbedda;
 $color-darkblue: #262c40;
+$color-darkblue2: #192333;
 
 @font-face {
     font-family: Rubik;
@@ -105,7 +106,8 @@ ul {
         bottom: 0;
         right: 0;
         background-color: $color-darkblue;
-        animation: fadeOut 6s forwards 5s;
+        display: none;
+        animation: fadeOut 6s backwards 5s;
     }
 
     &__box {
@@ -172,11 +174,11 @@ ul {
 
 .about{
     font-size: 2.5rem;
-    background: linear-gradient(to top, #192333, $color-darkblue);
+    background: linear-gradient(to top, $color-darkblue2, $color-darkblue);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 5rem;
     font-family: Merriweather;
     &__content {
         width: 65%;
@@ -188,4 +190,10 @@ ul {
             height: auto;
         }
     }
+}
+
+.director {
+    color: $color-offwhite;
+    background-color: $color-darkblue;
+    font-size: 2.1rem;
 }

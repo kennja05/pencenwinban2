@@ -89,7 +89,8 @@ ul {
     bottom: 0;
     right: 0;
     background-color: #262c40;
-    animation: fadeOut 6s forwards 5s; }
+    display: none;
+    animation: fadeOut 6s backwards 5s; }
   .header__box {
     text-transform: uppercase;
     position: absolute;
@@ -139,7 +140,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
   font-family: Merriweather; }
   .about__content {
     width: 65%;
@@ -149,3 +150,8 @@ ul {
     .about__content-image {
       width: 50%;
       height: auto; }
+
+.director {
+  color: #fbedda;
+  background-color: #262c40;
+  font-size: 2.1rem; }
