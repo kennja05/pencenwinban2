@@ -6,12 +6,13 @@
   justify-content: center;
   background-attachment: fixed; }
   .footer__item {
-    padding: 1rem; }
+    margin: 1rem; }
 
 .nav {
-  display: flex; }
+  display: flex;
+  font-size: 2.1rem; }
   .nav__link {
-    color: green; }
+    color: white; }
     .nav__link:hover {
       color: black; }
 
@@ -155,3 +156,12 @@ ul {
   color: #fbedda;
   background-color: #262c40;
   font-size: 2.1rem; }
+  .director__header {
+    font-family: Rubik;
+    font-size: 3rem;
+    min-height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../images/dark-grey-terrazzo.png"); }
+  .director__bio {
+    font-family: Merriweather; }

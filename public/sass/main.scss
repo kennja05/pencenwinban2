@@ -196,4 +196,19 @@ ul {
     color: $color-offwhite;
     background-color: $color-darkblue;
     font-size: 2.1rem;
+
+    &__header {
+        font-family: Rubik;
+        font-size: 3rem;
+        min-height: 75vh;
+        background-attachment: fixed;
+        background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        background-image: url('../images/dark-grey-terrazzo.png')
+    }
+
+    &__bio{
+        font-family: Merriweather;
+    }
 }
