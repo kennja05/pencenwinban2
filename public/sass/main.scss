@@ -106,8 +106,7 @@ ul {
         bottom: 0;
         right: 0;
         background-color: $color-darkblue;
-        display: none;
-        animation: fadeOut 6s backwards 5s;
+        animation: fadeOut 6s forwards 5s;
     }
 
     &__box {
@@ -217,5 +216,6 @@ ul {
 
     &__bio{
         font-family: Merriweather;
+        width: 50%;
     }
 }

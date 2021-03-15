@@ -10,7 +10,8 @@
 
 .nav {
   display: flex;
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  z-index: 3; }
   .nav__link {
     color: white; }
 
@@ -88,8 +89,7 @@ ul {
     bottom: 0;
     right: 0;
     background-color: #262c40;
-    display: none;
-    animation: fadeOut 6s backwards 5s; }
+    animation: fadeOut 6s forwards 5s; }
   .header__box {
     text-transform: uppercase;
     position: absolute;
@@ -169,4 +169,5 @@ ul {
       transform: translate(-50%, -50%);
       animation: fadeIn 3s 1s backwards; }
   .director__bio {
-    font-family: Merriweather; }
+    font-family: Merriweather;
+    width: 50%; }
