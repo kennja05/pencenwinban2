@@ -19,6 +19,11 @@ app.get('/director', function(req,res){
   res.render('pages/director')
 })
 
+//media - pics/audio/why band
+app.get('/media', function(req,res){
+  res.render('pages/media')
+})
+
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
