@@ -219,9 +219,14 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        & p {
+        & p, img {
             text-indent: 3rem;
             width: 50%;
+        }
+
+        & img {
+            border: solid $color-black;
+            border-radius: .5rem;
         }
     }
 }

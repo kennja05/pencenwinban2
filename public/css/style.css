@@ -173,6 +173,9 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .director__bio p {
+    .director__bio p, .director__bio img {
       text-indent: 3rem;
       width: 50%; }
+    .director__bio img {
+      border: solid #040404;
+      border-radius: .5rem; }
