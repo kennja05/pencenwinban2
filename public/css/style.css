@@ -183,12 +183,12 @@ ul {
     .director__bio-image {
       grid-column: 2 / 7;
       margin: 1rem;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
       z-index: 100; }
       .director__bio-image img {
         max-width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1.5rem;
         height: auto;
         border-radius: .5rem;
         border: 1px solid #040404; }
