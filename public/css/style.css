@@ -170,12 +170,22 @@ ul {
       animation: fadeIn 3s 1s backwards; }
   .director__bio {
     font-family: Merriweather;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .director__bio p, .director__bio img {
-      text-indent: 3rem;
-      width: 50%; }
-    .director__bio img {
-      border: solid #040404;
-      border-radius: .5rem; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8fr;
+    border: solid 1px red;
+    margin: 1rem; }
+    .director__bio-summary {
+      text-indent: 4rem;
+      grid-column: 8 / end;
+      border: 1px solid orange;
+      margin: 1rem; }
+    .director__bio-image {
+      border: solid 1px green;
+      border-radius: .5rem;
+      width: 100%;
+      height: auto;
+      grid-column: 2 / 7;
+      margin: 1rem; }
+      .director__bio-image image {
+        width: 100%;
+        height: auto; }
