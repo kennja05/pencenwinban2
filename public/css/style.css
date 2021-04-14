@@ -4,7 +4,8 @@
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  text-indent: 0; }
   .footer__item {
     margin: 1rem; }
 
@@ -62,7 +63,8 @@ html {
 
 body {
   line-height: 1.7;
-  color: #fbedda; }
+  color: #fbedda;
+  text-indent: 4rem; }
 
 a, a:hover, a:focus, a:active {
   text-decoration: none;
@@ -177,7 +179,6 @@ ul {
     align-self: start;
     position: relative; }
     .director__bio-summary {
-      text-indent: 4rem;
       grid-column: 8 / end;
       margin: 1rem; }
     .director__bio-image {
