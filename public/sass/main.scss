@@ -207,7 +207,7 @@ ul {
         background-image: url('../images/dark-grey-terrazzo.png');
         position: relative;
         &-title{
-            color: $color-orange;
+            color: $color-white;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -219,28 +219,25 @@ ul {
     &__bio{
         font-family: Merriweather;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8fr;
-        margin: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 8fr 1fr;
+        margin: 2rem;
         min-height: 100vh;
         align-self: start;
         position: relative;
         &-summary{
-            grid-column: 8 / end;
-            margin:  1rem;
-
+            grid-column: 7 / 10;
             & hr {
                 animation: lineDrawToRight 3s 1s backwards;
             }
 
             &-first {
                 font-size: 3rem;
-                color: black;
+                color: $color-orange;
             }
         }
 
         &-image {
-            grid-column: 2 / 7;
-            margin: 1rem; 
+            grid-column: 1 / 6;
             z-index: 100;
             & img {
                 max-width: 100%;
