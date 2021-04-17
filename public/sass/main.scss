@@ -210,7 +210,6 @@ ul {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation: fadeIn 3s 1s backwards;
         }
     
     }
@@ -226,6 +225,10 @@ ul {
         &-summary{
             grid-column: 8 / end;
             margin:  1rem;
+
+            & hr {
+                animation: lineDrawToRight 3s 1s backwards;
+            }
         }
 
         &-image {
