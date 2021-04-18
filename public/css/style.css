@@ -1,13 +1,14 @@
 .footer {
   color: #f37955;
-  background: url("../images/dark-grey-terrazzo.png");
+  background: #192333;
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  background-attachment: fixed;
   text-indent: 0; }
   .footer__item {
     margin: 1rem; }
+    .footer__item:hover {
+      color: #fdeae4; }
 
 .nav {
   display: flex;
@@ -185,14 +186,15 @@ ul {
       .director__bio-summary-first {
         font-size: 3rem;
         color: #f37955; }
+      .director__bio-summary-first:hover {
+        color: #f05325; }
     .director__bio-image {
-      grid-column: 1 / 6;
-      z-index: 100; }
+      grid-column: 1 / 6; }
       .director__bio-image img {
         max-width: 100%;
         position: -webkit-sticky;
         position: sticky;
-        top: 1.5rem;
+        top: 2rem;
         height: auto;
         border-radius: .5rem;
         border: 1px solid #262c40; }

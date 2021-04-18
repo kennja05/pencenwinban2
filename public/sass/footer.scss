@@ -1,17 +1,16 @@
+@import 'colors.scss';
+
 .footer {
-    color: #f37955;
-    background: url('../images/dark-grey-terrazzo.png');
+    color: $color-orange;
+    background:$color-darkblue2;
     font-size: 3rem;
     display: flex;
     justify-content: center;
-    background-attachment: fixed;
     text-indent: 0;
     &__item {
         margin: 1rem;
-        // &:hover{
-            // cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎵</text></svg>")
-            // 16 0, auto;
-        //}
-
+        &:hover{
+            color: lighten($color-orange, 30%);
+        }
     }
 }

@@ -1,13 +1,6 @@
 @import 'footer.scss';
 @import 'nav.scss'; 
-
-$color-gray: #777;
-$color-black: #040404;
-$color-white: #fbfbfb;
-$color-offwhite: #fbedda;
-$color-darkblue: #262c40;
-$color-darkblue2: #192333;
-$color-orange: #f37955;
+@import 'colors.scss';
 
 @font-face {
     font-family: Rubik;
@@ -234,16 +227,19 @@ ul {
                 font-size: 3rem;
                 color: $color-orange;
             }
+
+            &-first:hover{
+                color: darken($color-orange, 10%);
+            }
         }
 
         &-image {
             grid-column: 1 / 6;
-            z-index: 100;
             & img {
                 max-width: 100%;
                 position: -webkit-sticky;
                 position: sticky;
-                top: 1.5rem;
+                top: 2rem;
                 height: auto;
                 border-radius: .5rem;
                 border: 1px solid $color-darkblue
