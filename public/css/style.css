@@ -1,6 +1,6 @@
 .footer {
   color: #f37955;
-  background: #192333;
+  background: linear-gradient(#262c40, #192333);
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -153,24 +153,26 @@ ul {
       width: 50%;
       height: auto; }
 
+.subpage__header {
+  font-family: Rubik;
+  font-size: 3rem;
+  min-height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/dark-grey-terrazzo.png");
+  position: relative; }
+  .subpage__header-title {
+    color: #fbfbfb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; }
+
 .director {
   color: #192333;
   background-color: #fbfbfb;
   font-size: 2.1rem; }
-  .director__header {
-    font-family: Rubik;
-    font-size: 3rem;
-    min-height: 75vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-image: url("../images/dark-grey-terrazzo.png");
-    position: relative; }
-    .director__header-title {
-      color: #fbfbfb;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
   .director__bio {
     font-family: Merriweather;
     display: grid;
@@ -194,7 +196,7 @@ ul {
         max-width: 100%;
         position: -webkit-sticky;
         position: sticky;
-        top: 2rem;
+        top: 2.4rem;
         height: auto;
         border-radius: .5rem;
         border: 1px solid #262c40; }
